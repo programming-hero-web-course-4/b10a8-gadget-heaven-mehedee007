@@ -1,0 +1,122 @@
+[
+    {
+        "product_title": "Dell Inspiron 15",
+        "product_image": "dell_inspiron_15.jpg",
+        "category": 1,
+        "price": 750,
+        "description": "15-inch laptop with responsive performance and Full HD display.",
+        "Specification": [
+            "Intel Core i5",
+            "8GB RAM",
+            "512GB SSD",
+            "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_title": "HP Pavilion Gaming Desktop",
+        "product_image": "hp_pavilion_gaming.jpg",
+        "category": 2,
+        "price": 1200,
+        "description": "High-performance desktop designed for gamers.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "1TB HDD + 256GB SSD",
+            "NVIDIA GTX 1660"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_title": "Samsung 27\" Curved Monitor",
+        "product_image": "samsung_curved_monitor.jpg",
+        "category": 3,
+        "price": 300,
+        "description": "Curved 27-inch monitor with 1080p resolution and 75Hz refresh rate.",
+        "Specification": [
+            "1920 x 1080",
+            "75Hz",
+            "VA Panel",
+            "HDMI/DisplayPort"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_title": "Brother Laser Printer",
+        "product_image": "brother_laser_printer.jpg",
+        "category": 4,
+        "price": 200,
+        "description": "Efficient monochrome laser printer for home or office.",
+        "Specification": [
+            "30 ppm",
+            "Wireless Printing",
+            "Auto-Duplex",
+            "Compact Design"
+        ],
+        "availability": false,
+        "rating": 4.1
+    },
+    {
+        "product_title": "Netgear WiFi Router",
+        "product_image": "netgear_wifi_router.jpg",
+        "category": 5,
+        "price": 100,
+        "description": "Dual-band WiFi router with high-speed coverage for small to medium homes.",
+        "Specification": [
+            "AC1200",
+            "Dual-Band",
+            "Parental Controls",
+            "4 Ethernet Ports"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_title": "Seagate 1TB External Hard Drive",
+        "product_image": "seagate_1tb.jpg",
+        "category": 6,
+        "price": 50,
+        "description": "Portable external hard drive for reliable storage on the go.",
+        "Specification": [
+            "1TB",
+            "USB 3.0",
+            "Portable Design",
+            "Compatible with Windows & Mac"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_title": "Logitech Wireless Mouse",
+        "product_image": "logitech_wireless_mouse.jpg",
+        "category": 7,
+        "price": 25,
+        "description": "Wireless mouse with long battery life and comfortable design.",
+        "Specification": [
+            "2.4 GHz Wireless",
+            "1-Year Battery Life",
+            "Ergonomic Design",
+            "Compatible with Windows & Mac"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_title": "Microsoft Office 365",
+        "product_image": "microsoft_office_365.jpg",
+        "category": 8,
+        "price": 80,
+        "description": "Office software suite including Word, Excel, and PowerPoint.",
+        "Specification": [
+            "Word",
+            "Excel",
+            "PowerPoint",
+            "1-Year Subscription"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+]

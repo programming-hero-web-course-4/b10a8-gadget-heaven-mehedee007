@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Category from './Category';
 
 const Categories = () => {
 
@@ -14,6 +15,9 @@ const Categories = () => {
         <div>
 
             <h1>Categories : {categories.length}</h1>
+            {
+                categories.map(category => <Category key={category.categoryId} category={category}></Category>)
+            }
         </div>
     );
 };

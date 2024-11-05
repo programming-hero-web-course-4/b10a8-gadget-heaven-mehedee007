@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
-
+import { IoCartOutline } from "react-icons/io5";
+import { IoIosHeartEmpty } from "react-icons/io";
 const navLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/stat'>Statistics</NavLink></li>
@@ -39,8 +39,10 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <div className="navbar-end">
-                        <a className="btn">Button</a>
+                    <div className="navbar-end lg:flex gap-2">
+                        <button className='btn btn-circle'><IoCartOutline /></button>
+                        <button className='btn btn-circle'><IoIosHeartEmpty /></button>
+
                     </div>
             </div>
     );
