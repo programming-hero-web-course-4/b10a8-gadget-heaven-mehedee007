@@ -10,8 +10,8 @@ const Root = () => {
 
 
             </div>
-            <header className="relative top-10 b-80 flex">
-                <nav className="border-2 rounded-3xl w-10/12 mx-auto">
+            <header className="relative top-10 b-80 flex flex-col">
+                <nav className="border-2 rounded-3xl w-10/12 mx-auto pb-20">
                     <Navbar className=""></Navbar>
                     <Banner></Banner>
                 </nav>
