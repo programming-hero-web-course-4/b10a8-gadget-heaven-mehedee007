@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Category = ({category}) => {
+const Category = ({category, handleCategoryClick}) => {
     const {categoryId,categoryName} = category;
     return (
         <>
 
-                <NavLink className='btn rounded-full' to={`category/${categoryId}`}>{categoryName}</NavLink>
+                <button className='btn rounded-full' handleCategoryClick={() => handleCategoryClick(categoryId)}>{categoryName}</button>
         </>
     );
 };

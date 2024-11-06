@@ -23,9 +23,9 @@ const ItemDetails = () => {
             <p className='text-center'>
                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
             </p>
-            <section className='flex items-center justify-stretch  gap-4 bg-white rounded-2xl p-3'>
-                <div className='border rounded-2xl w-1/4  flex-1'>
-                    <img src={product_image} alt={product_title} className='object-cover'/>
+            <section className='flex lg:md:flex-row flex-col items-strech justify-stretch  gap-4 bg-white rounded-2xl p-3'>
+                <div className='border rounded-2xl  flex-1'>
+                    <img src={product_image} alt={product_title} className='object-contain h-full'/>
                 </div>
                 <div className='flex flex-col gap-3 w-3/4'>
                     <h3 className='text-2xl font-semibold'>{item.product_title}</h3>
@@ -48,7 +48,7 @@ const ItemDetails = () => {
                     <div>
                         <ReactStars {...star}/>
                     </div>
-                    <div className='flex items-stretch gap-3'>
+                    <div className='flex items-center gap-3'>
                         <button className='inline-flex items-center gap-2 btn rounded-full font-semibold text-xl'>Add to Cart <IoCartOutline></IoCartOutline></button>
                         <button className='btn btn-circle bg-white'><IoIosHeartEmpty></IoIosHeartEmpty></button>
                     </div>

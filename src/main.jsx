@@ -11,6 +11,7 @@ import Statistics from './components/Statistics/Statistics.jsx'
 import ItemDetails from './components/Items/ItemDetails/ItemDetails.jsx'
 import Category from './components/Categories/Category.jsx'
 import Items from './components/Items/Items.jsx'
+import { AppProvider } from './AppContext.js'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <AppProvider>
     <RouterProvider router={router}/>
+
+    </AppProvider>
   </StrictMode>,
 )
