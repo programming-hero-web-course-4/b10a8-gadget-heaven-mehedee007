@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner.jpg'
 
 const Banner = () => {
     return (
-        <div className='flex flex-col justify-center  relative text-center text-white w-10/12 mx-auto gap-6 pt-4'>
+        <div className='flex flex-col justify-center text-center w-10/12 mx-auto gap-6 pt-4'>
             <h1 className='text-4xl font-bold'>
                 Upgrade Your Tech Accessories with 
                 <br />
@@ -17,7 +17,7 @@ const Banner = () => {
             <div>
                 <button className='btn border rounded-2xl'>Shop Now</button>
             </div>
-            <div className='border rounded-3xl p-3 h-96 w-full'>
+            <div className='border rounded-3xl p-3 h-[500px] w-full'>
                 <img className='border rounded-3xl h-full w-full object-fill' src={bannerImg} alt="banner" />
 
             </div>

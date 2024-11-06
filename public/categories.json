@@ -1,35 +1,18 @@
 [
-      {
-        "categoryId": 1,
-        "categoryName": "Laptops"
-      },
-      {
-        "categoryId": 2,
-        "categoryName": "Desktops"
-      },
-      {
-        "categoryId": 3,
-        "categoryName": "Monitors"
-      },
-      {
-        "categoryId": 4,
-        "categoryName": "Printers"
-      },
-      {
-        "categoryId": 5,
-        "categoryName": "Networking Equipment"
-      },
-      {
-        "categoryId": 6,
-        "categoryName": "Storage Devices"
-      },
-      {
-        "categoryId": 7,
-        "categoryName": "Computer Accessories"
-      },
-      {
-        "categoryId": 8,
-        "categoryName": "Software"
-      }
-    ]
-  
+  {
+    "categoryId": 1,
+    "categoryName": "Laptops"
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Accessories"
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Phones"
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "Smart Watches"
+  }
+]

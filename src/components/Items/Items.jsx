@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import Item from './Item';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const Items = () => {
-    const [items, setItems] = useState([]);
+    const itemsList = useLoaderData();
+    const [items, setItems] = useState(itemsList);
+
+    const param = useParams();
 
     useEffect(()=>{
-        fetch(`items.json`)
-        .then(res => res.json())
-        .then(data => setItems(data))
-    }, [])
+        param.categoryId 
+    }, [items])
     return (
-        <div>
-            <h1>Total Items : {items.length}</h1>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
+            {
+                items.map(item => <Item key={item.item_id} item={item}></Item>)
+            }
         </div>
     );
 };

@@ -1,11 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Category = ({category}) => {
-    const {categoryName} = category;
+    const {categoryId,categoryName} = category;
     return (
-        <div>
-            <h1>{categoryName}</h1>
-        </div>
+        <>
+
+                <NavLink className='btn rounded-full' to={`category/${categoryId}`}>{categoryName}</NavLink>
+        </>
     );
 };
 

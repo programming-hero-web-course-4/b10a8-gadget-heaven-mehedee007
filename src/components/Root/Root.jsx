@@ -8,27 +8,23 @@ const Root = () => {
         <div className="">
             {/* <div className="my-5 w-full mx-auto bg-purple-600 border-2 h-3/4 rounded-3xl absolute"> */}
 
-            <div className="my-5 w-full mx-auto bg-[#9538E2] border-2 h-3/4 rounded-3xl absolute">
+            <div className="bg-[#9538E2] m-4 rounded-3xl h-3/4">
+                <Navbar></Navbar>
 
             </div>
-            <header className="relative top-10">
-                <nav className="w-10/12 mx-auto">
-                    <Navbar className=""></Navbar>
-                </nav>
-            </header>
 
-            <div className="">
+            <div className="bg-gray-400 pb-24">
 
 
-                <main className="w-10/12 mx-auto">
+                <main className="w-10/12 mx-auto ">
                     <Outlet></Outlet>
 
                 </main>
-                <footer className="w-10/12 mx-auto">
-                    <Footer></Footer>
-                </footer>
+
 
             </div>
+            <Footer></Footer>
+
 
         </div>
     );

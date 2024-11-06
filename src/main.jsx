@@ -8,6 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Statistics from './components/Statistics/Statistics.jsx'
+import ItemDetails from './components/Items/ItemDetails/ItemDetails.jsx'
+import Category from './components/Categories/Category.jsx'
+import Items from './components/Items/Items.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,8 @@ const router = createBrowserRouter([
   element: <Root></Root>,
   children: [{
     path: '/',
-    element : <Home></Home>
+    element : <Home></Home>,
+    loader: () => fetch(`/items.json`)
   },
   {
     path: 'dash',
@@ -24,7 +28,18 @@ const router = createBrowserRouter([
   {
     path: 'stat',
     element: <Statistics></Statistics>
-  }
+  },
+  {
+    path: 'item/:item_id',
+    element: <ItemDetails></ItemDetails>,
+    loader: () => fetch(`/items.json`),
+
+  },
+  // {
+  //   path: 'category/:categoryId',
+  //   element: <Home></Home>,
+  //   loader: () => fetch(`/items.json`),
+  // }
 
 ]
 }

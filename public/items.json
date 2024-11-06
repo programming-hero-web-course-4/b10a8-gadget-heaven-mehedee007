@@ -1,122 +1,195 @@
 [
     {
-        "product_title": "Dell Inspiron 15",
-        "product_image": "dell_inspiron_15.jpg",
-        "category": 1,
-        "price": 750,
-        "description": "15-inch laptop with responsive performance and Full HD display.",
-        "Specification": [
-            "Intel Core i5",
-            "8GB RAM",
-            "512GB SSD",
-            "Windows 11"
-        ],
-        "availability": true,
-        "rating": 4.5
+      "item_id": 1,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/sbXQqWT/dell-xps-7.png",
+      "category": 1,
+      "price": 1200,
+      "description": "13-inch laptop with stunning display and premium performance.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 4.8
     },
     {
-        "product_title": "HP Pavilion Gaming Desktop",
-        "product_image": "hp_pavilion_gaming.jpg",
-        "category": 2,
-        "price": 1200,
-        "description": "High-performance desktop designed for gamers.",
-        "Specification": [
-            "Intel Core i7",
-            "16GB RAM",
-            "1TB HDD + 256GB SSD",
-            "NVIDIA GTX 1660"
-        ],
-        "availability": true,
-        "rating": 4.7
+      "item_id": 2,
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://i.ibb.co.com/QdBVqJS/mac-book-pro.png",
+      "category": 1,
+      "price": 999,
+      "description": "Apple's lightweight laptop with M2 chip for outstanding speed.",
+      "Specification": [
+        "Apple M2",
+        "8GB RAM",
+        "256GB SSD",
+        "macOS"
+      ],
+      "availability": true,
+      "rating": 4.3
     },
     {
-        "product_title": "Samsung 27\" Curved Monitor",
-        "product_image": "samsung_curved_monitor.jpg",
-        "category": 3,
-        "price": 300,
-        "description": "Curved 27-inch monitor with 1080p resolution and 75Hz refresh rate.",
-        "Specification": [
-            "1920 x 1080",
-            "75Hz",
-            "VA Panel",
-            "HDMI/DisplayPort"
-        ],
-        "availability": true,
-        "rating": 4.3
+      "item_id": 3,
+      "product_title": "HP Spectre x360",
+      "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+      "category": 1,
+      "price": 1350,
+      "description": "Premium 2-in-1 laptop with a sleek design and touch display.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 4.2
     },
     {
-        "product_title": "Brother Laser Printer",
-        "product_image": "brother_laser_printer.jpg",
-        "category": 4,
-        "price": 200,
-        "description": "Efficient monochrome laser printer for home or office.",
-        "Specification": [
-            "30 ppm",
-            "Wireless Printing",
-            "Auto-Duplex",
-            "Compact Design"
-        ],
-        "availability": false,
-        "rating": 4.1
+      "item_id": 4,
+      "product_title": "Acer Aspire 5",
+      "product_image": "https://example.com/images/acer_aspire_5.jpg",
+      "category": 1,
+      "price": 600,
+      "description": "Affordable laptop with decent performance for everyday tasks.",
+      "Specification": [
+        "Intel Core i5",
+        "8GB RAM",
+        "256GB SSD",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 3.9
     },
     {
-        "product_title": "Netgear WiFi Router",
-        "product_image": "netgear_wifi_router.jpg",
-        "category": 5,
-        "price": 100,
-        "description": "Dual-band WiFi router with high-speed coverage for small to medium homes.",
-        "Specification": [
-            "AC1200",
-            "Dual-Band",
-            "Parental Controls",
-            "4 Ethernet Ports"
-        ],
-        "availability": true,
-        "rating": 4.2
+      "item_id": 5,
+      "product_title": "Logitech MX Master 3",
+      "product_image": "https://example.com/images/logitech_mx_master_3.jpg",
+      "category": 2,
+      "price": 99,
+      "description": "Ergonomic wireless mouse with customizable buttons.",
+      "Specification": [
+        "2.4 GHz Wireless",
+        "Bluetooth Connectivity",
+        "Rechargeable Battery",
+        "Ergonomic Design"
+      ],
+      "availability": true,
+      "rating": 4.6
     },
     {
-        "product_title": "Seagate 1TB External Hard Drive",
-        "product_image": "seagate_1tb.jpg",
-        "category": 6,
-        "price": 50,
-        "description": "Portable external hard drive for reliable storage on the go.",
-        "Specification": [
-            "1TB",
-            "USB 3.0",
-            "Portable Design",
-            "Compatible with Windows & Mac"
-        ],
-        "availability": true,
-        "rating": 4.6
+      "item_id": 6,
+      "product_title": "Corsair K95 RGB Keyboard",
+      "product_image": "https://example.com/images/corsair_k95.jpg",
+      "category": 2,
+      "price": 150,
+      "description": "Mechanical keyboard with customizable RGB lighting.",
+      "Specification": [
+        "Mechanical Keys",
+        "RGB Backlighting",
+        "Macro Keys",
+        "USB Pass-Through"
+      ],
+      "availability": true,
+      "rating": 4.1
     },
     {
-        "product_title": "Logitech Wireless Mouse",
-        "product_image": "logitech_wireless_mouse.jpg",
-        "category": 7,
-        "price": 25,
-        "description": "Wireless mouse with long battery life and comfortable design.",
-        "Specification": [
-            "2.4 GHz Wireless",
-            "1-Year Battery Life",
-            "Ergonomic Design",
-            "Compatible with Windows & Mac"
-        ],
-        "availability": true,
-        "rating": 4.5
+      "item_id": 7,
+      "product_title": "Anker PowerCore Portable Charger",
+      "product_image": "https://example.com/images/anker_powercore.jpg",
+      "category": 2,
+      "price": 60,
+      "description": "Portable charger with high-speed charging technology.",
+      "Specification": [
+        "10000mAh Capacity",
+        "USB-C",
+        "Compact Design",
+        "Fast Charging"
+      ],
+      "availability": true,
+      "rating": 3.8
     },
     {
-        "product_title": "Microsoft Office 365",
-        "product_image": "microsoft_office_365.jpg",
-        "category": 8,
-        "price": 80,
-        "description": "Office software suite including Word, Excel, and PowerPoint.",
-        "Specification": [
-            "Word",
-            "Excel",
-            "PowerPoint",
-            "1-Year Subscription"
-        ],
-        "availability": true,
-        "rating": 4.8
+      "item_id": 8,
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "category": 3,
+      "price": 999,
+      "description": "Apple's latest iPhone with advanced camera and A16 chip.",
+      "Specification": [
+        "6.1-inch Display",
+        "128GB Storage",
+        "Triple Camera",
+        "iOS 16"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "item_id": 9,
+      "product_title": "Samsung Galaxy S23",
+      "product_image": "https://example.com/images/samsung_galaxy_s23.jpg",
+      "category": 3,
+      "price": 850,
+      "description": "Flagship Samsung smartphone with high-resolution display.",
+      "Specification": [
+        "6.2-inch Display",
+        "256GB Storage",
+        "Triple Camera",
+        "Android 13"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "item_id": 10,
+      "product_title": "Google Pixel 7",
+      "product_image": "https://example.com/images/google_pixel_7.jpg",
+      "category": 3,
+      "price": 650,
+      "description": "Google's smartphone with advanced AI features.",
+      "Specification": [
+        "6.3-inch Display",
+        "128GB Storage",
+        "Dual Camera",
+        "Android 13"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "item_id": 11,
+      "product_title": "OnePlus 11",
+      "product_image": "https://example.com/images/oneplus_11.jpg",
+      "category": 3,
+      "price": 700,
+      "description": "High-performance smartphone with fast charging and vibrant display.",
+      "Specification": [
+        "6.7-inch Display",
+        "256GB Storage",
+        "Triple Camera",
+        "Android 13"
+      ],
+      "availability": true,
+      "rating": 4.0
+    },
+    {
+      "item_id": 12,
+      "product_title": "Xiaomi Mi 11",
+      "product_image": "https://example.com/images/xiaomi_mi_11.jpg",
+      "category": 3,
+      "price": 550,
+      "description": "Budget-friendly smartphone with great performance and camera.",
+      "Specification": [
+        "6.8-inch Display",
+        "128GB Storage",
+        "Dual Camera",
+        "Android 12"
+      ],
+      "availability": true,
+      "rating": 3.7
     }
-]
+  ]
+  

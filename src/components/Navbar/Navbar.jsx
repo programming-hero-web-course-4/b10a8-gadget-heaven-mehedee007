@@ -9,7 +9,7 @@ const navLinks = <>
 </>;
 const Navbar = () => {
     return (
-            <div className=' navbar p-2 lg:text-white'>
+            <div className=' navbar p-2 lg:text-white w-11/12 mx-auto'>
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,10 +32,10 @@ const Navbar = () => {
                                 {navLinks}
                             </ul>
                         </div>
-                        <a className="btn btn-ghost text-xl">Gadeget Heaven</a>
+                        <NavLink to='/'  className="btn btn-ghost text-xl">Gadeget Heaven</NavLink>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1">
+                        <ul className="menu menu-horizontal px-1 lg:flex gap-2">
                             {navLinks}
                         </ul>
                     </div>
