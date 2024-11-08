@@ -14,11 +14,13 @@ import Items from './components/Items/Items.jsx'
 import Wishlist from './components/WishList/Wishlist.jsx'
 import Cart from './components/Cart/Cart.jsx'
 import { AppProvider } from './AppContext.jsx'
+import ErrorPage from './components/Error/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root></Root>,
+    errorElement: <ErrorPage />,
     children: [{
       path: '/',
       element: <Home></Home>,

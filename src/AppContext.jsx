@@ -8,19 +8,22 @@ export const AppProvider = ({ children }) => {
     const [items, setItems] = useState([]);
     const [categories, setCategories] = useState([]);
     const [itemsList, setItemsList] = useState([]);
+    const [totalCost, setTotalCost] = useState(0);
 
     const [wishlist, setWishlist] = useState([]);
 
     const [cartItems, setCartItems] = useState([]);
     const handleAddToCart = (item) => {
         const newItem = [...cartItems, item];
-        setCartItems(newItem)
-        return true
+        setCartItems(newItem);
+        const newCost = totalCost + item.price;
+        setTotalCost(newCost);
+        return true;
     }
 
     const handleAddToWislist = (wishedIitem) => {
         if (!wishlist.find(item => item.item_id === wishedIitem.item_id)) {
-            const newItem = [...cartItems, wishedIitem];
+            const newItem = [...wishlist, wishedIitem];
             setWishlist(newItem);
             toast(`Item Added to wishlist`);
         } else {
@@ -72,6 +75,7 @@ export const AppProvider = ({ children }) => {
             , cartItems
             , handleAddToWislist
             , wishlist
+            ,totalCost
         }}>
             {children}
         </AppContext.Provider>
