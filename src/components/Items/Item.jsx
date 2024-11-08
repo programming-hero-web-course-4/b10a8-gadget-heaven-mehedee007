@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Item = ({ item, handleAddToCart }) => {
+const Item = ({ item }) => {
     const navigate = useNavigate();
 
     
@@ -9,10 +9,10 @@ const Item = ({ item, handleAddToCart }) => {
     const { product_title, price, item_id, product_image } = item;
     const handleShowDetails = () =>{
         navigate(`/item/${item_id}`);
-        const itemDetail = document.getElementById('itemDetails');
+        // const itemDetail = document.getElementById('itemDetails');
 
-        console.log(itemDetail);
-        itemDetail?.scrollIntoView({'behavior' : 'smooth', 'top': '0'})
+        // console.log(itemDetail);
+        // itemDetail?.scrollIntoView({'behavior' : 'smooth', 'top': '0'})
 
     }
     return (
@@ -23,7 +23,7 @@ const Item = ({ item, handleAddToCart }) => {
                 <h3 className='text-2xl font-semibold'>{product_title}</h3>
                 <h4>Price : {price} $</h4>
                 <div>
-                    <button onClick={handleShowDetails} className='btn rounded-full bg-blue-900 hover:bg-blue-700 text-white' >View Details</button>
+                    <button onClick={handleShowDetails} className='btn rounded-full text-custom-color hover:bg-blue-70 border border-custom-color' >View Details</button>
                 </div>
 
 

@@ -32,9 +32,14 @@ const Dashboard = () => {
                         </TabPanel>
                     </Tabs>
                 </div> */}
-                <div className='inline-flex gap-3'>
-                    <Link className={`btn bg-[#9538E2] border rounded-full`}> Cart</Link>
-                    <Link className={`btn bg-[#9538E2] border rounded-full`}> WishList</Link>
+                <div className='inline-flex gap-3 justify-between'>
+                    <div>
+                        <button className={`btn bg-[#9538E2] border rounded-full`}> Cart</button>
+
+                    </div>
+                    <div>
+                        <button className={`btn bg-[#9538E2] border rounded-full`}> WishList</button>
+                    </div>
 
                 </div>
 

@@ -11,12 +11,12 @@ import { AppContext } from '../../AppContext';
 const Home = () => {
     // const itemsAll = useLoaderData();
     // const [items, setItems] = useState(itemsList);
-    const {items, setItems, itemsList, setItemsList} = useContext(AppContext);
+    // const {items, setItems, itemsList, setItemsList} = useContext(AppContext);
     // setItemsList(itemsAll);
     // setItems(itemsAll);
-    useEffect(()=>{
+    // useEffect(()=>{
 
-    }, [items])
+    // }, [items])
 
     // const handleCategoryClick = (id) =>{
     //     if(id === 0){
@@ -28,11 +28,11 @@ const Home = () => {
     //     }
     // }
     return (
-        <div>
+        <div className=''>
             <Banner></Banner>
             <div className='mt-20 flex flex-col gap-8'>
                 <h1 className='text-3xl font-bold text-center'>Explore Cutting-Edge Gadgets</h1>
-                <div className='flex lg:md:flex-row flex-col items-start justify-start gap-4'>
+                <div className='flex lg:md:flex-row flex-col items-start justify-start gap-4 w-10/12 mx-auto'>
                     <Categories></Categories>
                     <Items ></Items>
                 </div>

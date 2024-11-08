@@ -60,6 +60,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AppProvider>
       <RouterProvider router={router} />
+
     </AppProvider>
   </StrictMode>,
 )
