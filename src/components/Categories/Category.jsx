@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Category = ({category, handleCategoryClick}) => {
+import { AppContext } from '../../AppContext';
+
+const Category = ({category}) => {
     const {categoryId,categoryName} = category;
+    const {handleCategoryClick} = useContext(AppContext);
     return (
         <>
 
-                <button className='btn rounded-full' handleCategoryClick={() => handleCategoryClick(categoryId)}>{categoryName}</button>
+                <button className='btn rounded-full bg-gray-100 active:bg-custom-color' onClick={() => handleCategoryClick(categoryId)}>{categoryName}</button>
         </>
     );
 };

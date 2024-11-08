@@ -4,8 +4,8 @@ import { IoCartOutline } from 'react-icons/io5';
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 
-const ItemDetails = () => {
-    
+const ItemDetails = ({handleAddToCart}) => {
+
     const items = useLoaderData();
     const param = useParams();
     const item = items.find(item => item.item_id === parseInt(param.item_id));
@@ -15,21 +15,18 @@ const ItemDetails = () => {
         size: 30,
         value: rating,
         edit: false
-      };
+    };
     return (
         <div className='flex flex-col justify-center'>
             {/* <h1>This is for item detail : {param.item_id}</h1> */}
-            <h2 className='text-3xl font-bold text-center'>Product Details</h2>
-            <p className='text-center'>
-                Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
-            </p>
-            <section className='flex lg:md:flex-row flex-col items-strech justify-stretch  gap-4 bg-white rounded-2xl p-3'>
+
+            <section className='flex lg:md:flex-row flex-col items-strech justify-stretch  gap-4 bg-white rounded-2xl p-3 w-8/12 mx-auto' id='itemDetails'>
                 <div className='border rounded-2xl  flex-1'>
-                    <img src={product_image} alt={product_title} className='object-contain h-full'/>
+                    <img src={product_image} alt={product_title} className='object-contain h-full' />
                 </div>
                 <div className='flex flex-col gap-3 w-3/4'>
-                    <h3 className='text-2xl font-semibold'>{item.product_title}</h3>
-                    <h4 className='text-xl font-semibold text-gray-600'>Price : $ {item.price}</h4>
+                    <h3 className='text-2xl font-semibold'>{product_title}</h3>
+                    <h4 className='text-xl font-semibold text-gray-600'>Price : $ {price}</h4>
                     <div>
 
                         {
@@ -40,16 +37,16 @@ const ItemDetails = () => {
                     <p className='text-xl font-semibold text-gray-400'>{description}</p>
                     <h4 className='text-xl font-semibold'>Specifications</h4>
                     {
-                        Specification.map((spec, index) => <p className='text-xl font-semibold text-gray-400'>{index + 1}. {spec}</p>)
+                        Specification.map((spec, index) => <p className='text-xl font-semibold text-gray-400' key={index}>{index + 1}. {spec}</p>)
                     }
                     <h4 className='text-xl font-semibold'>
                         Rating : {rating}
                     </h4>
                     <div>
-                        <ReactStars {...star}/>
+                        <ReactStars {...star} />
                     </div>
                     <div className='flex items-center gap-3'>
-                        <button className='inline-flex items-center gap-2 btn rounded-full font-semibold text-xl'>Add to Cart <IoCartOutline></IoCartOutline></button>
+                        <button className='inline-flex items-center gap-2 btn rounded-full font-semibold text-xl' onClick={() =>handleAddToCart(item)}>Add to Cart <IoCartOutline></IoCartOutline></button>
                         <button className='btn btn-circle bg-white'><IoIosHeartEmpty></IoIosHeartEmpty></button>
                     </div>
 

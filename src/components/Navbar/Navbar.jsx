@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
+
+// import './Navbar.css'
 const navLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/stat'>Statistics</NavLink></li>
     <li><NavLink to='/dash'>Dashboard</NavLink></li>
 </>;
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
+
     return (
-            <div className=' navbar p-2 lg:text-white w-11/12 mx-auto'>
+            <div className=' navbar p-2 lg:text-white mx-auto bg-custom-color rounded-t-2xl'>
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +43,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end lg:flex gap-2">
-                        <button className='btn btn-circle'><IoCartOutline /></button>
+                        <button className='btn btn-circle'><IoCartOutline /> {cartItems.length}</button>
                         <button className='btn btn-circle'><IoIosHeartEmpty /></button>
 
                     </div>
