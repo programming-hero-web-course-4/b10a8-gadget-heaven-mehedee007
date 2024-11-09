@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="mt-24 bg-white">
             <div className='w-10/12 mx-auto'>
                 
-            <div className='flex flex-col justify-center gap-3'>
+            <div className='flex flex-col justify-center gap-3 pt-24'>
                 <div className='flex flex-col justify-center items-center gap-3'>
                     <h1 className='text-2xl font-black'>Gadget Heaven</h1>
                     <p>

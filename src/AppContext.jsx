@@ -31,6 +31,10 @@ export const AppProvider = ({ children }) => {
         }
     }
 
+    const handlePurchaseItems = () =>{
+
+    }
+
 
 
 
@@ -62,6 +66,13 @@ export const AppProvider = ({ children }) => {
         }
     }
 
+    const handleSorByPriceDesc = () =>{
+        const priceDescItems = [...cartItems].sort((a, b)=>parseFloat(b.price) - parseFloat(a.price));
+        setCartItems(priceDescItems);
+
+        console.log(cartItems);
+    }
+
     return (
         <AppContext.Provider value={{
             items
@@ -76,6 +87,8 @@ export const AppProvider = ({ children }) => {
             , handleAddToWislist
             , wishlist
             ,totalCost
+            ,setCartItems
+            ,handleSorByPriceDesc
         }}>
             {children}
         </AppContext.Provider>
