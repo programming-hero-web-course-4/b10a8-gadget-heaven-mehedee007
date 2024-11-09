@@ -70,7 +70,7 @@ export const AppProvider = ({ children }) => {
         const priceDescItems = [...cartItems].sort((a, b)=>parseFloat(b.price) - parseFloat(a.price));
         setCartItems(priceDescItems);
 
-        console.log(cartItems);
+        console.log('context',cartItems);
     }
 
     return (

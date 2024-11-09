@@ -6,18 +6,18 @@ import DashboardContainer from '../ReusableComponents/DashboardContainer';
 
 const Cart = () => {
     const { cartItems, totalCost, setCartItems, handleSorByPriceDesc } = useContext(AppContext);
-    // useEffect(()=>{
-
-    // }, [cartItems]);
+    useEffect(() => {
+        console.log('Updated cartItems:', cartItems);
+    }, [cartItems])
 
 
     console.log(cartItems);
 
     return (
         <div className='flex flex-col gap-4'>
-            <div className='flex justify-between items-center'>
+            <div className='flex lg:flex-row flex-col lg:justify-between items-center'>
                 <h3 className='text-xl font-semibold'>Cart</h3>
-                <div className='flex items-center gap-3'>
+                <div className='flex lg:flex-row flex-col items-center gap-3'>
                     <h3 className='text-xl font-semibold'>Total Cost: {totalCost}</h3>
                     <button className='btn border-custom-color text-custom-color rounded-full' onClick={handleSorByPriceDesc}>Sort By Price <VscListOrdered></VscListOrdered></button>
                     <button className={`btn bg-custom-color rounded-full`} disabled={totalCost === 0 ? true : false}>Purchase</button>
