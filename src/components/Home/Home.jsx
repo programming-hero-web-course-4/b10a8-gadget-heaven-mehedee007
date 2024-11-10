@@ -8,6 +8,7 @@ import { useContext } from 'react';
 
 import { AppContext } from '../../AppContext';
 
+
 const Home = () => {
     // const itemsAll = useLoaderData();
     // const [items, setItems] = useState(itemsList);

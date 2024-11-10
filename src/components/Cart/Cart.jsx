@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import DashboardContainer from '../ReusableComponents/DashboardContainer';
 
 const Cart = () => {
-    const { cartItems, totalCost, setCartItems, handleSorByPriceDesc } = useContext(AppContext);
+    const { cartItems, totalCost, setCartItems, handleSorByPriceDesc, handlePurchaseItems } = useContext(AppContext);
     useEffect(() => {
         console.log('Updated cartItems:', cartItems);
     }, [cartItems])
@@ -20,13 +20,14 @@ const Cart = () => {
                 <div className='flex lg:flex-row flex-col items-center gap-3'>
                     <h3 className='text-xl font-semibold'>Total Cost: {totalCost}</h3>
                     <button className='btn border-custom-color text-custom-color rounded-full' onClick={handleSorByPriceDesc}>Sort By Price <VscListOrdered></VscListOrdered></button>
-                    <button className={`btn bg-custom-color rounded-full`} disabled={totalCost === 0 ? true : false}>Purchase</button>
+                    <button className={`btn bg-custom-color rounded-full`} disabled={totalCost === 0 ? true : false} onClick={()=>document.getElementById('purchaseModal').showModal()}>Purchase</button>
                 </div>
             </div>
 
             <div className='flex flex-col gap-3'>
                  {cartItems.length ? cartItems.map((item, index) => <DashboardContainer item={item} key={index}></DashboardContainer>): ''}
             </div>
+            
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import App from "./App";
 import { toast } from "react-toastify";
+// import { useNavigate } from "react-router-dom";
 
 export const AppContext = createContext();
 
@@ -31,9 +32,14 @@ export const AppProvider = ({ children }) => {
         }
     }
 
-    const handlePurchaseItems = () =>{
+    // const navigate = useNavigate();
 
+    const handlePurchaseItems = () =>{
+        setCartItems([]);
+        setTotalCost(0);
+        // navigate(`/`);
     }
+
 
 
 
@@ -89,6 +95,7 @@ export const AppProvider = ({ children }) => {
             ,totalCost
             ,setCartItems
             ,handleSorByPriceDesc
+            ,handlePurchaseItems
         }}>
             {children}
         </AppContext.Provider>
