@@ -1,6 +1,6 @@
 # Project Title : Gadget Heaven
-# Live Link : 
-# Requirement Document Link : 
+# Live Link : [giddy-spark.surge.sh](https://giddy-basket.surge.sh/)
+# Requirement Document Link : [Requirement Document](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 # List of Fundamental Concepts Used in the Project :
 - Router
 - useState 
