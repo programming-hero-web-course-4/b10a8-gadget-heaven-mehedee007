@@ -14,6 +14,8 @@ export const AppProvider = ({ children }) => {
     const [wishlist, setWishlist] = useState([]);
 
     const [cartItems, setCartItems] = useState([]);
+
+    const [purchasedItems, setPurchasedItems] = useState([]);
     const handleAddToCart = (item) => {
         const newItem = [...cartItems, item];
         setCartItems(newItem);
@@ -35,6 +37,12 @@ export const AppProvider = ({ children }) => {
     // const navigate = useNavigate();
 
     const handlePurchaseItems = () =>{
+        let purchase = [...purchasedItems];
+        cartItems.forEach(item =>{
+            purchase = [...purchase, item];
+        })
+        setPurchasedItems(purchase);
+
         setCartItems([]);
         setTotalCost(0);
         // navigate(`/`);
@@ -97,6 +105,7 @@ export const AppProvider = ({ children }) => {
             ,setCartItems
             ,handleSorByPriceDesc
             ,handlePurchaseItems
+            ,purchasedItems
         }}>
             {children}
         </AppContext.Provider>

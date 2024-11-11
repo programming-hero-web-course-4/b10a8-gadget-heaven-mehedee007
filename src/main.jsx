@@ -16,6 +16,7 @@ import Cart from './components/Cart/Cart.jsx'
 import { AppProvider } from './AppContext.jsx'
 import ErrorPage from './components/Error/ErrorPage.jsx'
 import { HelmetProvider } from 'react-helmet-async'
+import PurchaseHistory from './components/PurchaseHistory/PurchaseHistory.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
       path: 'wishlist',
       element: <Wishlist></Wishlist>
+    },
+    {
+      path: 'history',
+      element: <PurchaseHistory></PurchaseHistory>
     }
       // {
       //   path: 'category/:categoryId',

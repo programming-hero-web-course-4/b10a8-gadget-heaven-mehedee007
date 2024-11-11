@@ -10,6 +10,8 @@ const navLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/stat'>Statistics</NavLink></li>
     <li><NavLink to='/dash'>Dashboard</NavLink></li>
+    <li><NavLink to='/history'>Purchase History</NavLink></li>
+
 </>;
 const Navbar = ({path}) => {
     const { cartItems, wishlist } = useContext(AppContext);
