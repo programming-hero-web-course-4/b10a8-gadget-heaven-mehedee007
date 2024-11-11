@@ -6,6 +6,7 @@ import ReactStars from "react-rating-stars-component";
 
 import { AppContext } from '../../../AppContext';
 import  { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 const ItemDetails = () => {
 
@@ -36,9 +37,17 @@ const ItemDetails = () => {
 
     return (
         <div className='flex flex-col justify-center'>
+            <Helmet>
+                <title>Item Details || Gadget Heaven</title>
+            </Helmet>
             {/* <h1>This is for item detail : {param.item_id}</h1> */}
-
-            <section className='flex lg:md:flex-row flex-col items-strech justify-stretch  gap-4 bg-white rounded-2xl p-3 lg:w-8/12 w-10/12 mx-auto' id='itemDetails'>
+            <section className='items-center flex flex-col bg-custom-color pb-24 gap-3'>
+                <h1 className='text-white text-2xl font-bold'>Product Details</h1>
+                <p className='text-white text-sm'>
+                Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+                </p>
+            </section>
+            <section className='flex lg:md:flex-row flex-col items-strech justify-stretch  gap-4 bg-white rounded-2xl p-3 lg:w-8/12 w-10/12 mx-auto -mt-20' id='itemDetails'>
                 <div className='border rounded-2xl  flex-1'>
                     <img src={product_image} alt={product_title} className='object-contain h-full' />
                 </div>

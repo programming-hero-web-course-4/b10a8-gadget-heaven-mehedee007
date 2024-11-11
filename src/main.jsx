@@ -15,6 +15,7 @@ import Wishlist from './components/WishList/Wishlist.jsx'
 import Cart from './components/Cart/Cart.jsx'
 import { AppProvider } from './AppContext.jsx'
 import ErrorPage from './components/Error/ErrorPage.jsx'
+import { HelmetProvider } from 'react-helmet-async'
 
 const router = createBrowserRouter([
   {
@@ -60,9 +61,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppProvider>
-      <RouterProvider router={router} />
-      
-    </AppProvider>
+    <HelmetProvider>
+      <AppProvider>
+        <RouterProvider router={router} />
+
+      </AppProvider>
+    </HelmetProvider>
   </StrictMode>,
 )

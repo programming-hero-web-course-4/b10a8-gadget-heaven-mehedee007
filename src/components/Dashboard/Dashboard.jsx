@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Wishlist from '../WishList/Wishlist';
 import Cart from '../Cart/Cart';
+import { Helmet } from 'react-helmet-async';
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState();
@@ -14,6 +15,9 @@ const Dashboard = () => {
     }
     return (
         <div className=''>
+            <Helmet>
+                <title>Dashboard || Gadget Heaven</title>
+            </Helmet>
             <div className='bg-custom-color pb-32'>
 
             <div className='w-10/12 mx-auto text-white flex flex-col items-center text-center p-10 gap-4 '>

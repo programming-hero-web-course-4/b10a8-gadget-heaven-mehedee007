@@ -34,7 +34,7 @@
     {
       "item_id": 3,
       "product_title": "HP Spectre x360",
-      "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+      "product_image": "https://i.ibb.co.com/2yVq4w8/hp-spectre.jpg",
       "category": 1,
       "price": 1350,
       "description": "Premium 2-in-1 laptop with a sleek design and touch display.",
@@ -50,7 +50,7 @@
     {
       "item_id": 4,
       "product_title": "Acer Aspire 5",
-      "product_image": "https://example.com/images/acer_aspire_5.jpg",
+      "product_image": "https://i.ibb.co.com/0ybTqH2/Acer-aspire-5.jpg",
       "category": 1,
       "price": 600,
       "description": "Affordable laptop with decent performance for everyday tasks.",
@@ -66,7 +66,7 @@
     {
       "item_id": 5,
       "product_title": "Logitech MX Master 3",
-      "product_image": "https://example.com/images/logitech_mx_master_3.jpg",
+      "product_image": "https://i.ibb.co.com/KNHgm2P/logitech-mx-master.jpg",
       "category": 2,
       "price": 99,
       "description": "Ergonomic wireless mouse with customizable buttons.",
@@ -82,7 +82,7 @@
     {
       "item_id": 6,
       "product_title": "Corsair K95 RGB Keyboard",
-      "product_image": "https://example.com/images/corsair_k95.jpg",
+      "product_image": "https://i.ibb.co.com/D8BwjTg/crosair-keyboard.webp",
       "category": 2,
       "price": 150,
       "description": "Mechanical keyboard with customizable RGB lighting.",
@@ -98,7 +98,7 @@
     {
       "item_id": 7,
       "product_title": "Anker PowerCore Portable Charger",
-      "product_image": "https://example.com/images/anker_powercore.jpg",
+      "product_image": "https://i.ibb.co.com/25z2cLz/anker-powerbank.webp",
       "category": 2,
       "price": 60,
       "description": "Portable charger with high-speed charging technology.",
@@ -114,7 +114,7 @@
     {
       "item_id": 8,
       "product_title": "iPhone 14 Pro",
-      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "product_image": "https://i.ibb.co.com/8DXyPPn/Apple-i-Phone-14-Pro.jpg",
       "category": 3,
       "price": 999,
       "description": "Apple's latest iPhone with advanced camera and A16 chip.",
@@ -130,7 +130,7 @@
     {
       "item_id": 9,
       "product_title": "Samsung Galaxy S23",
-      "product_image": "https://example.com/images/samsung_galaxy_s23.jpg",
+      "product_image": "https://i.ibb.co.com/vw0bvDx/Galaxy-S23-Cream-3448.jpg",
       "category": 3,
       "price": 850,
       "description": "Flagship Samsung smartphone with high-resolution display.",
@@ -146,7 +146,7 @@
     {
       "item_id": 10,
       "product_title": "Google Pixel 7",
-      "product_image": "https://example.com/images/google_pixel_7.jpg",
+      "product_image": "https://i.ibb.co.com/MPL0pzS/pixel-7.jpg",
       "category": 3,
       "price": 650,
       "description": "Google's smartphone with advanced AI features.",
@@ -162,7 +162,7 @@
     {
       "item_id": 11,
       "product_title": "OnePlus 11",
-      "product_image": "https://example.com/images/oneplus_11.jpg",
+      "product_image": "https://i.ibb.co.com/NV4ZvLb/images-kv-d7111-png.webp",
       "category": 3,
       "price": 700,
       "description": "High-performance smartphone with fast charging and vibrant display.",
@@ -178,7 +178,7 @@
     {
       "item_id": 12,
       "product_title": "Xiaomi Mi 11",
-      "product_image": "https://example.com/images/xiaomi_mi_11.jpg",
+      "product_image": "https://i.ibb.co.com/s5PYxng/Xiaomi-Mi-11-Black-500x500-1-500x500.jpg",
       "category": 3,
       "price": 550,
       "description": "Budget-friendly smartphone with great performance and camera.",
