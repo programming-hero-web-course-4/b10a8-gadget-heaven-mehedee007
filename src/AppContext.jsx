@@ -78,6 +78,7 @@ export const AppProvider = ({ children }) => {
 
         console.log('context',cartItems);
     }
+    
 
     return (
         <AppContext.Provider value={{

@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../../AppContext';
 import { VscListOrdered } from 'react-icons/vsc';
-import CartItem from './CartItem';
 import DashboardContainer from '../ReusableComponents/DashboardContainer';
 
 const Cart = () => {
